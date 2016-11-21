@@ -9,8 +9,7 @@
 <body>
   <div class="container" style="height: 1600px;">
     <div class="header">
-      <div class="title"><a href="index.html"><img title="Poketato" src="img/title.png" alt="Poketato" /></a></div>
-      <div class="undertitle"> The Ultimate Pokemon Repository </div>
+      <?php include 'header.php'; ?>
     </div>
     <div class="menu">
       <?php include 'menu.php'; ?>
