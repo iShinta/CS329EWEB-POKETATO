@@ -1,0 +1,102 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+	background-image: url("img/back-paper.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.container{
+	font-family: Verdana, georgia, "times new roman", times, serif;
+	background-color: white;
+	opacity: 0.85;
+	width: 1300px;
+	margin: auto;
+	height: 100%;
+}
+
+.header{
+	border-bottom: double 2px;
+}
+
+.title{
+	width: 100%;
+	text-align: center;
+}
+
+.undertitle{
+	width: 100%;
+	text-align: center;
+}
+
+.menu{
+	width: 100%;
+	border-bottom: double 2px;
+	text-align: center;
+}
+
+.menu li{
+	margin-left: 20px;
+	display: inline-block;
+}
+
+.content{
+	font-size: 0.9em;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.main_content{
+	width: 940px;
+	display: inline-block;
+	padding: 10px;
+	margin: 0px;
+	vertical-align: top;
+}
+
+.news{
+	width: 550px;
+}
+
+.featured_pokemon{
+	float: right;
+	width: 340px;
+}
+
+.player{
+	width: 600px;
+	height: 400px;
+}
+
+.right_content{
+	width: 300px;
+	display: inline-block;
+	padding: 0px;
+	margin: 10px;
+	vertical-align: top;
+}
+
+.ad{
+	margin: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0px;
+	text-align: right;
+}
+
+.footer{
+	color: darkgrey;
+	font-size: 0.8em;
+	min-height: 200px;
+	padding-top:15px;
+	text-align: center;
+	border-top: solid 2px black;
+}
+
+.footer a{
+	color: darkgrey;
+}
