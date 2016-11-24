@@ -17,6 +17,17 @@
 		</div>
 		<div class="content">
 			<div class="main_content">
+	    <?php
+          if (isset($_COOKIE["puzzleCompleted"])) {
+          	print <<< COMPLETED
+          	<h2>Looks like you've already tried this puzzle!</h2>
+          	<h3>Feel free to try again, or try our PokeQuiz!</h3>
+COMPLETED;
+          } else {
+          	$random = "TRUE";
+          	setcookie("puzzleCompleted", $random, time()+60 * 60 * 24 * 365);
+          }
+        ?>
         <script type="text/javascript">
         <!--
         var dim = 4;
@@ -338,7 +349,7 @@
         </div>
 			</div>
 			<div class="right_content">
-        5 days left until #PokemonSunMoon, US Trainers! Which PokÃ©mon do you want on your team? http://bit.ly/1OnFndH
+        5 days left until #PokemonSunMoon, US Trainers! Which Pokémon do you want on your team? http://bit.ly/1OnFndH
 				<div class="ad">
 					<img src="img/ad2-pic.jpg" alt="advertising" />
 					Advertisement
@@ -363,3 +374,4 @@
 	</div>
 </body>
 </html>
+

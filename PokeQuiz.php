@@ -16,6 +16,17 @@
     </div>
     <div class="content">
       <div class="main_content">
+        <?php
+          if (isset($_COOKIE["quizCompleted"])) {
+            print <<< COMPLETED
+            <h2>Looks like you've already tried this quiz!</h2>
+            <h3>Feel free to try again, or try our PokePuzzle!</h3>
+COMPLETED;
+          } else {
+            $random = "TRUE";
+            setcookie("quizCompleted", $random, time()+60 * 60 * 24);
+          }
+        ?>
         <h1>Who's That Pokemon?</h1>
         <form name = "pokemonQuiz">
           <b><h3>Easy</h3></b>
