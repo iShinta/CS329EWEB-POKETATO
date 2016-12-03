@@ -6,5 +6,3 @@
   <li><a href="puzzle.php">Puzzle</a></li>
   <li><a href="./PokeQuiz.php">Quiz</a></li>
 <ul>
-
-<?php include('player.php'); ?>
