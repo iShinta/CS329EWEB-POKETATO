@@ -34,14 +34,14 @@
 		captions[9] = "victoria_memorial";
 		index = 0;
 		document.writeln("<p id=\"pic\">")
-		document.writeln("<img src=\"img/pokemon-pics\" + images[index] + "\" title=\"Travel\" alt=\"" + captions[index] + "\" /><br />" + captions[index]);
+		document.writeln("<img src=\"img/pokemon-pics/\" + images[index] + "\" title=\"Travel\" alt=\"" + captions[index] + "\" /><br />" + captions[index]);
 		document.writeln("</p>");
 
 		setInterval(function(){
 			if(++index == images.length){
 				index = 0;
 			}
-			document.getElementById("pic").innerHTML = "<img src=\"img/pokemon-pics\" + images[index] + "\" title=\"Travel\" alt=\"" + captions[index] + "\" /><br />" + captions[index];
+			document.getElementById("pic").innerHTML = "<img src=\"img/pokemon-pics/\" + images[index] + "\" title=\"Travel\" alt=\"" + captions[index] + "\" /><br />" + captions[index];
 		}, 3000);
 
 
