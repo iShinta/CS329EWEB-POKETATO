@@ -25,7 +25,6 @@
 				</div>
 				<div class="news">
 					<h1>News</h1>
-          <?php include('player.php'); ?>
           <p>Pokémon GO has been toying with spawns from the very beginning, first starting out slow by switching nests every so often, but now they’ve evolved, no pun intended. We had a Halloween event that blanketed the world in very specific Pokémon, and we now have Pokémon super-nests popping up to help promote the new daily quest system.
           Now, Niantic is doing something even more interesting. In what might be a preview of new events to come, they’re spawning Lapras (Laprases?) on the coastlines of the Iwate Prefecture, Miyagi Prefecture, and Fukushima Prefecture, areas affected by the 2011 Tsunami.</p>
 				</div>
