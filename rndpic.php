@@ -19,6 +19,14 @@
   $result = mysqli_query($connect, "SELECT * FROM $table WHERE id == $numPokemon LIMIT 1");
 
   while($row = $result->fetch_row()){
-    echo $row[2].",".$row[1];
+    if (empty($result)){
+      $response = " , ";
+    }else{
+      $response = $row[2].",".$row[1];
+    }
+    echo $response;
   }
+
+  $result->free();
+  mysqli_close($connect);
 ?>
