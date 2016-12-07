@@ -15,8 +15,7 @@
   print "Connected to ". mysqli_get_host_info($connect) . "<br /><br />\n";
 
   $table = "pokedex";
-  $numPokemon = rand(1, 151);
-  $result = mysqli_query($connect, "SELECT * FROM $table WHERE id == $numPokemon LIMIT 1");
+  $result = mysqli_query($connect, "SELECT * FROM $table ORDER BY RAND() LIMIT 1");
 
   while($row = $result->fetch_row()){
     if (empty($result)){
@@ -29,4 +28,5 @@
 
   $result->free();
   mysqli_close($connect);
+  echo "End";
 ?>
