@@ -21,7 +21,7 @@
     if (empty($result)){
       $response = " , ";
     }else{
-      $response = $row[2].",".$row[1];
+      $response = substr($row[2],2).",".$row[1];
     }
     echo $response;
   }
