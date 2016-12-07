@@ -1,0 +1,12 @@
+<span><a href="index.php">&copy; 2016 Poketato</a> | </span>
+<span><a href="#">Contact Us</a> | </span>
+<span><a href="about.php">About Us</a> | </span>
+<span><a href="#">Advertise</a> | </span>
+<span><a href="#">Your Ad Choices</a> | </span>
+<span><a href="#">Privacy</a> | </span>
+<span><a href="#">Terms of Service</a> | </span>
+<span><a href="#">Site Information Navigation</a> | </span>
+<span><a href="#">Site Map</a> | </span>
+<span><a href="#">Help</a> | </span>
+<span><a href="#">Site Feedback</a> | </span>
+<span><a href="#">Subscriptions</a></span>

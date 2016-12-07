@@ -20,26 +20,26 @@
       	<!--
       		var images = new Array();
       		images[0] = "001bulbasaur.png";
-      		images[1] = "016pidgey";
-      		images[2] = "028sandslash.png";
-      		images[3] = "037vulpix";
-      		images[4] = "040wigglytuff.png";
-      		images[5] = "043oddish.png";
-      		images[6] = "130gyarados.png";
-      		images[7] = "133eevee.png";
-      		images[8] = "143snorlax.png";
-      		images[9] = "146moltres.png";
+      		images[1] = "002ivysaur.png";
+      		images[2] = "003venusaur.png";
+      		images[3] = "004charmander.png";
+      		images[4] = "005charmander.png";
+      		images[5] = "006charizard.png";
+      		images[6] = "007squirtle.png";
+      		images[7] = "008wartortle.png";
+      		images[8] = "009blastoise.png";
+      		images[9] = "010caterpie.png";
       		var captions = new Array();
       		captions[0] = "001bulbasaur";
-      		captions[1] = "016pidgey";
-      		captions[2] = "028sandslash";
-      		captions[3] = "037vulpix";
-      		captions[4] = "040wigglytuff";
-      		captions[5] = "043oddish";
-      		captions[6] = "130gyarados";
-      		captions[7] = "133eevee";
-      		captions[8] = "143snorlax";
-      		captions[9] = "146moltres";
+      		captions[1] = "002ivysaur";
+      		captions[2] = "003venusaur";
+      		captions[3] = "004charmander";
+      		captions[4] = "005charmander";
+      		captions[5] = "006charizard";
+      		captions[6] = "007squirtle";
+      		captions[7] = "008wartortle";
+      		captions[8] = "009blastoise";
+      		captions[9] = "010caterpie";
       		index = 0;
       		document.writeln("<p id=\"pic\">")
       		document.writeln("<img src=\"img/pokemon-pics/" + images[index] + "\" title=\"Travel\" alt=\"" + captions[index] + "\" /><br />" + captions[index]);
@@ -58,19 +58,7 @@
       </div>
 
       <div class="footer">
-        <span><a href="#">&copy; 2016 Poketato</a> | </span>
-        <span><a href="#">Contact Us</a> | </span>
-        <span><a href="#">Work With Us</a> | </span>
-        <span><a href="#">Advertise</a> | </span>
-        <span><a href="#">Your Ad Choices</a> | </span>
-        <span><a href="#">Privacy</a> | </span>
-        <span><a href="#">Terms of Service</a> | </span>
-        <span><a href="#">Site Information Navigation</a> | </span>
-        <span><a href="#">Site Map</a> | </span>
-        <span><a href="#">Help</a> | </span>
-        <span><a href="#">Site Feedback</a> | </span>
-        <span><a href="#">Subscriptions</a></span>
-      </div>
+        <?php include 'footer.php'; ?>
     </div>
   </div>
 </body>

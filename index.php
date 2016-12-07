@@ -64,18 +64,7 @@
 			</div>
 		</div>
 		<div class="footer">
-			<span><a href="#">&copy; 2016 Poketato</a> | </span>
-			<span><a href="#">Contact Us</a> | </span>
-			<span><a href="#">Work With Us</a> | </span>
-			<span><a href="#">Advertise</a> | </span>
-			<span><a href="#">Your Ad Choices</a> | </span>
-			<span><a href="#">Privacy</a> | </span>
-			<span><a href="#">Terms of Service</a> | </span>
-			<span><a href="#">Site Information Navigation</a> | </span>
-			<span><a href="#">Site Map</a> | </span>
-			<span><a href="#">Help</a> | </span>
-			<span><a href="#">Site Feedback</a> | </span>
-	    <span><a href="#">Subscriptions</a></span>
+			<?php include 'footer.php'; ?>
 		</div>
 	</div>
 </body>
