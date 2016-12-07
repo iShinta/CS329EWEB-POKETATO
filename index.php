@@ -32,6 +32,40 @@
 					<h1>Featured Video</h1>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/5s8g8NCJyvs" frameborder="0" allowfullscreen></iframe>
 				</div>
+        <div>
+          <h1>Pokemons Caroussel!</h1>
+        	<script type="text/javascript">
+        	<!--
+        		var images = new Array();
+        		images[0] = "001bulbasaur.png";
+        		var captions = new Array();
+        		captions[0] = "001bulbasaur";
+        		index = 0;
+        		document.writeln("<p id=\"pic\">")
+        		document.writeln("<img src=\"img/pokemon-pics/" + images[index] + "\" title=\"Travel\" alt=\"" + captions[index] + "\" /><br />" + captions[index]);
+        		document.writeln("</p>");
+
+            var xhr;
+            if (window.ActiveXObject) {
+              xhr = new ActiveXObject ("Microsoft.XMLHTTP");
+            }else if (window.XMLHttpRequest) {
+              xhr = new XMLHttpRequest ();
+            }
+
+        		setInterval(function(){
+              var url = "rndpic.php";
+              xhr.open("GET", url, true);
+              xhr.onreadystatechange = function() {
+                if ((xhr.readyState == 4) && (xhr.status == 200)) {
+                  var response = xhr.responseText.split(",");
+                  document.getElementById("pic").innerHTML = "<img src=\"" + response[0] + "\" title=\"Travel\" alt=\"" + response[1] + "\" /><br />" + response[1];
+                }
+            	};
+              xhr.send(null);
+        		}, 3000);
+        	-->
+        	</script>
+        </div>
         The goal is to increase tourism in those struggling areas, and hey, if you want to buy a  few hundred Pokéballs to catch all the Lapras while you’re there, no one’s going to stop you. It’s a nice gesture, and the rest of the world is exceedingly jealous, as Lapras is one of the most popular, most powerful, but hardest to find Pokémon in the game, unless you’ve been lucky with spawns or hatching 10 km eggs.
 
         The event runs until November 23rd, so that’s a bit of late notice for you to plan a trip to Japan, but hopefully those nearby will be able to take advantage. Given the game’s popularity in Japan, and the popularity of Lapras in the game, I’m guessing this will be a hit.
