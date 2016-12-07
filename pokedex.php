@@ -141,7 +141,7 @@
         	<option value="Seaking">Seaking</option>
         	<option value="Staryu">Staryu</option>
         	<option value="Starmie">Starmie</option>
-        	<option value="Mr.Mime">Mr.Mime</option>
+        	<option value="Mr. Mime">Mr.Mime</option>
         	<option value="Scyther">Scyther</option>
         	<option value="Jynx">Jynx</option>
         	<option value="Electabuzz">Electabuzz</option>
