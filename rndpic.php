@@ -12,7 +12,7 @@
     die("mysqli_connect failed: " . mysqli_connect_error());
   }
 
-  //print "Connected to ". mysqli_get_host_info($connect) . "<br /><br />\n";
+  print "Connected to ". mysqli_get_host_info($connect) . "<br /><br />\n";
 
   $table = "pokedex";
   $numPokemon = rand(1, 151);
