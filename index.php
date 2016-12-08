@@ -25,7 +25,11 @@
 				</div>
 				<div class="news">
 					<h1>News</h1>
-          <p>In today's #PokemonGenerations, Ghetsis makes one last attempt to take over Unova, but a hero arrives to stop him! </p>
+          <ul>
+            <li>In today's #PokemonGenerations, Ghetsis makes one last attempt to take over Unova, but a hero arrives to stop him! </li>
+            <li>The #PokemonSunMoon: Super Music Collection is available on iTunes! http://bit.ly/2bWgfJi</li>
+            <li>More Pokémon are coming to #PokemonGO! Stay tuned for details on 12/12, Trainers!</li>
+          </ul>
 				</div>
 				<div class="player">
 					<h1>Featured Video</h1>
