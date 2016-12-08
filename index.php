@@ -33,7 +33,7 @@
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/5s8g8NCJyvs" frameborder="0" allowfullscreen></iframe>
 				</div>
         <div class="caroussel">
-          <h1>Pokemons Caroussel!</h1>
+          <h1 style="text-align: center;">Pokemons Caroussel!</h1>
         	<script type="text/javascript">
         	<!--
         		var images = new Array();
@@ -42,7 +42,7 @@
         		captions[0] = "001bulbasaur";
         		index = 0;
         		document.writeln("<p id=\"pic\">")
-        		document.writeln("<img src=\"img/pokemon-pics/" + images[index] + "\" title=\"Travel\" alt=\"" + captions[index] + "\" /><br />" + captions[index]);
+        		document.writeln("<img src=\"img/pokemon-pics/" + images[index] + "\" title=\"Travel\" style=\"max-width: 300px; max-height: 300px; margin: auto;\" alt=\"" + captions[index] + "\" /><br />" + captions[index]);
         		document.writeln("</p>");
 
             var xhr;
