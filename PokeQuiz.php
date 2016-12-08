@@ -76,7 +76,7 @@
                   ?>
                   <form name="quiz" method="post">
                     <h3>Medium</h3>
-                    <div><br />2) I'm a medium True question
+                    <div><br />2) Gyarados is a Water and Flying Type
                 		<br /><input value="q2a" name="q2" type="radio" />a) True
               		  <br /><input value="q2b" name="q2" type="radio" />b) False</div>
                     <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
@@ -144,7 +144,7 @@
               }else if($_SESSION["question"] == 5){ //Q5
                 if(isset($_POST["q5"])){
                   echo "Check Question 5<br/>";
-                  if($_POST["q5"] == "galaxy"){
+                  if($_POST["q5"] == "thunder stone"){
                     echo "Right answer";
                     $_SESSION["score"] += 1;
                   }else{
@@ -160,7 +160,7 @@
                   ?>
                   <form name="quiz" method="post">
                     <h3> Difficult </h3>
-                    <div>5) I am a difficult question <input id="q5" name="q5" type="text" />.</div>
+                    <div>5) What does Pikachu need to evolve into Raichu? <input id="q5" name="q5" type="text" />.</div>
                     <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
                   </form>
                   <?php
@@ -168,7 +168,7 @@
               }else if($_SESSION["question"] == 6){ //Q6
                 if(isset($_POST["q6"])){
                   echo "Check Question 6<br/>";
-                  if($_POST["q6"] == "age"){
+                  if($_POST["q6"] == "mewtwo"){
                     echo "Right answer";
                     $_SESSION["score"] += 1;
                   }else{
@@ -184,7 +184,7 @@
                   ?>
                   <form name="quiz" method="post">
                     <h3> Difficult </h3>
-                    <div><br />6) I am another difficult question  <input id="q6" name="q6" type="text" /> of the Pokemon universe.</div>
+                    <div><br />6) Which Pokemon's Pokedex entry comes first, Mew or Mewtwo? <input id="q6" name="q6" type="text" /></div>
                     <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
                   </form>
                   <?php
@@ -204,3 +204,4 @@
   </div>
 </body>
 </html>
+

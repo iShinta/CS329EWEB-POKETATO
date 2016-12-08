@@ -22,10 +22,13 @@
         <h1>About the Team</h1>
         <h2>Kevin</h2>
         <p>The Potato</p>
+        <p>kevinngo806@utexas.edu</p>
         <h2>Minh-Tri</h2>
         <p>The Snorlax</p>
+        <p>ho.minhtri.pro@gmail.com</p>
         <h2>Minh-Tuan</h2>
         <p>The Gengar</p>
+	<p>chibi.kona@gmail.com</p>
 
 			</div>
 			<div class="right_content">

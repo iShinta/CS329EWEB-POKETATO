@@ -56,7 +56,7 @@
             <p>But yeah, if you want a guaranteed army of Lapras in the next two weeks here, it’s time to head out to Japan and frequent these recovering regions.</p>
         </div>
         <div class="caroussel">
-          <h1 style="text-align: center;">Pokemons Caroussel!</h1>
+          <h1 style="text-align: center;">Pokemon Carousel!</h1>
         	<script type="text/javascript">
         	<!--
         		var images = new Array();
