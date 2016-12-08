@@ -34,7 +34,6 @@
         }
       }else if(isset($_POST["logout"])){
         // echo "logout";
-        destroySession();
         showLoggedOut();
       }
     }else{ //Not after a POST
@@ -74,6 +73,8 @@
     unset($_COOKIE["timeloggedin"]);
     setcookie("id", '', time() - 3600);
     setcookie("timeloggedin", '', time() - 3600);
+    session_unset();
+    session_destroy();
     echo "<p>Thank You. You are now logged out.</p>";
   }
 ?>

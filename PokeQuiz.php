@@ -50,8 +50,8 @@
                     <b><h3>Easy</h3></b>
                     <div>1) Who's the main mascot of the Pokemon Franchise?
                     <img src="./img/pikachu.png" alt="easy pokemon" style="width: 250px;height: 250px;"><br />
-                		<br /><input value="q1a" name="q1" type="radio" />a) Pikachu
-                		<br /><input value="q1b" name="q1" type="radio" />b) Electabuzz</div>
+                		<br /><input value="q1a" name="q1" type="radio" />a) Electabuzz
+                		<br /><input value="q1b" name="q1" type="radio" />b) Pikachu</div>
                     <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
                   </form>
                   <?php
@@ -76,7 +76,7 @@
                   ?>
                   <form name="quiz" method="post">
                     <h3>Medium</h3>
-                    <div><br />2) I'm a medium question
+                    <div><br />2) I'm a medium True question
                 		<br /><input value="q2a" name="q2" type="radio" />a) True
               		  <br /><input value="q2b" name="q2" type="radio" />b) False</div>
                     <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
