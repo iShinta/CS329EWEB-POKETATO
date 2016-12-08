@@ -19,10 +19,10 @@
 			<div class="main_content">
 	    <?php
           if (isset($_COOKIE["puzzleCompleted"])) {
-          	print <<< COMPLETED
+          	?>
           	<h2>Looks like you have already tried this puzzle!</h2>
           	<h3>Feel free to try again, or try our PokeQuiz!</h3>
-            COMPLETED;
+            <?php
           } else {
           	$random = "TRUE";
           	setcookie("puzzleCompleted", $random, time()+60 * 60 * 24 * 365);
