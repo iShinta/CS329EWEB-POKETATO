@@ -191,6 +191,9 @@
       	//startNow();
       	?>
       </div>
+      <div class="right_content">
+        <?php include 'ads.php'; ?>
+			</div>
       <br/>
       <br/>
 
@@ -212,5 +215,3 @@
   </div>
 </body>
 </html>
-
-
