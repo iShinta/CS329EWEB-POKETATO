@@ -25,7 +25,7 @@
       <div class="main_content">
         <?php
           if(!isset($_SESSION["name"])) {
-          ?><a href="index.php">Start the Quiz</a><?php
+          ?><a href="PokeQuiz.php">Start the Quiz</a><?php
           }else{
             echo "You're logged in ".$_SESSION["name"]."<br/>";
             print_r("Current score: ".$_SESSION["score"]."<br /><br />");
