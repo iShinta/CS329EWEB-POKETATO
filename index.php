@@ -58,7 +58,7 @@
               xhr.onreadystatechange = function() {
                 if ((xhr.readyState == 4) && (xhr.status == 200)) {
                   var response = xhr.responseText.split(",");
-                  document.getElementById("pic").innerHTML = "<img src=\"" + response[0] + "\" title=\"Travel\" alt=\"" + response[1] + "\" /><br />" + response[1];
+                  document.getElementById("pic").innerHTML = "<img src=\"" + response[0] + "\" title=\"Travel\" style=\"max-width: 300px; max-height: 300px; margin: auto;\" alt=\"" + response[1] + "\" /><br />" + response[1];
                 }
             	};
               xhr.send(null);
