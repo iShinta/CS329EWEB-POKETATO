@@ -20,9 +20,9 @@
 	    <?php
           if (isset($_COOKIE["puzzleCompleted"])) {
           	print <<< COMPLETED
-          	<h2>Looks like you've already tried this puzzle!</h2>
+          	<h2>Looks like you have already tried this puzzle!</h2>
           	<h3>Feel free to try again, or try our PokeQuiz!</h3>
-COMPLETED;
+            COMPLETED;
           } else {
           	$random = "TRUE";
           	setcookie("puzzleCompleted", $random, time()+60 * 60 * 24 * 365);
@@ -348,13 +348,8 @@ COMPLETED;
           Game is beginning
         </div>
 			</div>
-			<div class="right_content">
-        5 days left until #PokemonSunMoon, US Trainers! Which Pok�mon do you want on your team? http://bit.ly/1OnFndH
-				<div class="ad">
-					<img src="img/ad2-pic.jpg" alt="advertising" />
-					Advertisement
-				</div>
-				Who can stop Team Galactic's ambitions from turning into catastrophe? Don't miss this week's #PokemonGenerations! http://bit.ly/2eZNop3
+      <div class="right_content">
+        <?php include 'ads.php'; ?>
 			</div>
 		</div>
 		<div class="footer">

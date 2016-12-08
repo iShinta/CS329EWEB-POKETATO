@@ -102,6 +102,7 @@
                   ?>
                   <form name="quiz" method="post">
                     <h3>Medium</h3>
+                    <img src="./img/charizard.png" alt="medium pokemon" style="width: 250px;height: 250px;">
                     <div><br />2) Charmander's last evolution is ___?
                 		<br /><input value="q3a" name="q3a" type="checkbox" />a) Chardrago
                 		<br /><input value="q3b" name="q3b" type="checkbox" />b) Charizard
@@ -130,6 +131,7 @@
                   ?>
                   <form name="quiz" method="post">
                     <h3> Difficult </h3>
+                    <img src="./img/aerodactyl.png" alt="medium pokemon" style="width: 250px;height: 250px;">
                     <div><br />4) The only fossil Pokemon in Generation 1 that does not have an evolution is ___?
                 		<br /><input value="q4a" name="q4a" type="checkbox" />a) Victreebel
                 		<br /><input value="q4b" name="q4b" type="checkbox" />b) Kabutops
