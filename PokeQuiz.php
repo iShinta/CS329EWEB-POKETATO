@@ -48,8 +48,8 @@
                   ?>
                   <form name="quiz" method="post">
                     <b><h3>Easy</h3></b>
-                    <div>1) Who's the main mascot of the Pokemon Franchise?
                     <img src="./img/pikachu.png" alt="easy pokemon" style="width: 250px;height: 250px;"><br />
+                    <div>1) Who's the main mascot of the Pokemon Franchise?
                 		<br /><input value="q1a" name="q1" type="radio" />a) Electabuzz
                 		<br /><input value="q1b" name="q1" type="radio" />b) Pikachu</div>
                     <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
