@@ -32,7 +32,7 @@
 					<h1>Featured Video</h1>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/5s8g8NCJyvs" frameborder="0" allowfullscreen></iframe>
 				</div>
-        <div>
+        <div class="caroussel">
           <h1>Pokemons Caroussel!</h1>
         	<script type="text/javascript">
         	<!--

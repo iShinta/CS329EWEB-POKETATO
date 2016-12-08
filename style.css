@@ -72,6 +72,11 @@ body{
 	height: 400px;
 }
 
+.caroussel{
+	width: 900px;
+	text-align: center;
+}
+
 .right_content{
 	width: 300px;
 	display: inline-block;
