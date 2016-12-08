@@ -1,5 +1,6 @@
 <?php
   function start(){
+    if (session_status() === PHP_SESSION_NONE){ session_start(); }
     //Login is included at the start of each page to see if they are logged in.
     if($_SERVER['REQUEST_METHOD'] === 'POST'){ //Form has been posted
       if(isset($_POST["username"])){
@@ -22,8 +23,8 @@
         //print($userlist[$username]."<br />");
         if(array_key_exists($username, $userlist) && strcmp($userlist[$username], $password)){
           //echo "Login Succeeded. Welcome ".$username. ".<br />";
-          setcookie("id", $username, time()+120);
-          setcookie("timeloggedin", time(), time()+120);
+          setcookie("id", $username, time()+3600);
+          setcookie("timeloggedin", time(), time()+3600);
           showLogged();
         }else{
           echo "Login Failed.<br />Bad username or password";
@@ -33,6 +34,7 @@
         }
       }else if(isset($_POST["logout"])){
         // echo "logout";
+        destroySession();
         showLoggedOut();
       }
     }else{ //Not after a POST

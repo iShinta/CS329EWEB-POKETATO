@@ -20,6 +20,12 @@
         <h1>About the Website</h1>
         <p>This a made by fans for fans.</p>
         <h1>About the Team</h1>
+        <h2>Kevin</h2>
+        <p>The Potato</p>
+        <h2>Minh-Tri</h2>
+        <p>The Snorlax</p>
+        <h2>Minh-Tuan</h2>
+        <p>The Gengar</p>
 
 			</div>
 			<div class="right_content">

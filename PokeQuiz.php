@@ -3,8 +3,15 @@
   <meta charset="utf-8" />
   <title>Poketato - The Ultimate Pokemon Repository</title>
   <link rel="stylesheet" style="text/css" href="style.css" />
-  <script src="./PokeQuiz.js"></script>
 </head>
+
+<?php
+  if(!isset($_SESSION["name"])){
+    $_SESSION["name"] = $username;
+    $_SESSION["question"] = 1;
+    $_SESSION["score"] = 0;
+  }
+?>
 
 <body>
   <div class="container" style="height: 1600px;">
@@ -17,44 +24,176 @@
     <div class="content">
       <div class="main_content">
         <?php
-          if (isset($_COOKIE["quizCompleted"])) {
-            print <<< COMPLETED
-            <h2>Looks like you've already tried this quiz!</h2>
-            <h3>Feel free to try again, or try our PokePuzzle!</h3>
-COMPLETED;
-          } else {
-            $random = "TRUE";
-            setcookie("quizCompleted", $random, time()+60 * 60 * 24);
+          if(!isset($_SESSION["name"])) {
+          ?><a href="index.php">Start the Quiz</a><?php
+          }else{
+            echo "You're logged in ".$_SESSION["name"]."<br/>";
+            print_r("Current score: ".$_SESSION["score"]."<br /><br />");
+            print_r("<h2>Question ".$_SESSION["question"]."</h2>");
+
+            if($_SESSION["question"] == 1){ //Q1
+              if(isset($_POST["q1"])){
+                echo "Check Question 1<br/>";
+                if($_POST["q1"] == "q1b"){
+                  echo "Right answer";
+                  $_SESSION["score"] += 1;
+                }else{
+                  echo "Wrong answer";
+                }
+                $_SESSION["question"] +=1;
+                ?>
+                <form name="quiz" method="post">
+                  <input type="submit" name="submit" value="Next Question" />
+                </form>
+                <?php
+              }else{
+                ?>
+                <form name="quiz" method="post">
+                  <b><h3>Easy</h3></b>
+                  <div>1) Who's the main mascot of the Pokemon Franchise?
+                  <img src="./img/pikachu.png" alt="easy pokemon" style="width: 250px;height: 250px;"><br />
+              		<br /><input value="q1a" name="q1" type="radio" />a) Pikachu
+              		<br /><input value="q1b" name="q1" type="radio" />b) Electabuzz</div>
+                  <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
+                </form>
+                <?php
+              }
+            }else if($_SESSION["question"] == 2){ //Q2
+              if(isset($_POST["q2"])){
+                echo "Check Question 2<br/>";
+
+                if($_POST["q2"] == 'q2a'){
+                  echo "Right answer";
+                  $_SESSION["score"] += 1;
+                }else{
+                  echo "Wrong answer";
+                }
+                $_SESSION["question"] +=1;
+                ?>
+                <form name="quiz" method="post">
+                  <input type="submit" name="submit" value="Next Question" />
+                </form>
+                <?php
+              }else{
+                ?>
+                <form name="quiz" method="post">
+                  <h3>Medium</h3>
+                  <div><br />2) I'm a medium question
+              		<br /><input value="q2a" name="q2" type="radio" />a) True
+            		  <br /><input value="q2b" name="q2" type="radio" />b) False</div>
+                  <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
+                </form>
+                <?php
+              }
+            }else if($_SESSION["question"] == 3){ //Q3
+              if(isset($_POST["q3a"]) || isset($_POST["q3b"]) || isset($_POST["q3c"]) || isset($_POST["q3d"])){
+                echo "Check Question 3<br/>";
+                if($_POST["q3b"] == "q3b" && $_POST["q3a"] != "q3a" && $_POST["q3c"] != "q3c" && $_POST["q3d"] != "q3d"){
+                  echo "Right answer";
+                  $_SESSION["score"] += 1;
+                }else{
+                  echo "Wrong answer";
+                }
+                $_SESSION["question"] +=1;
+                ?>
+                <form name="quiz" method="post">
+                  <input type="submit" name="submit" value="Next Question" />
+                </form>
+                <?php
+              }else{
+                ?>
+                <form name="quiz" method="post">
+                  <h3>Medium</h3>
+                  <div><br />2) Charmander's last evolution is ___?
+              		<br /><input value="q3a" name="q3a" type="checkbox" />a) Chardrago
+              		<br /><input value="q3b" name="q3b" type="checkbox" />b) Charizard
+              		<br /><input value="q3c" name="q3c" type="checkbox" />c) Charmeleon
+              		<br /><input value="q3d" name="q3d" type="checkbox" />d) Charmander</div>
+                  <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
+                </form>
+                <?php
+              }
+            }else if($_SESSION["question"] == 4){ //Q4
+              if(isset($_POST["q4a"]) || isset($_POST["q4b"]) || isset($_POST["q4c"]) || isset($_POST["q4d"])){
+                echo "Check Question 4<br/>";
+                if($_POST["q4d"] == "q4d" && $_POST["q4a"] != "q4a" && $_POST["q4b"] != "q4b" && $_POST["q4c"] != "q4c"){
+                  echo "Right answer";
+                  $_SESSION["score"] += 1;
+                }else{
+                  echo "Wrong answer";
+                }
+                $_SESSION["question"] +=1;
+                ?>
+                <form name="quiz" method="post">
+                  <input type="submit" name="submit" value="Next Question" />
+                </form>
+                <?php
+              }else{
+                ?>
+                <form name="quiz" method="post">
+                  <h3> Difficult </h3>
+                  <div><br />4) The only fossil Pokemon in Generation 1 that does not have an evolution is ___?
+              		<br /><input value="q4a" name="q4a" type="checkbox" />a) Victreebel
+              		<br /><input value="q4b" name="q4b" type="checkbox" />b) Kabutops
+              		<br /><input value="q4c" name="q4c" type="checkbox" />c) Omastar
+              		<br /><input value="q4d" name="q4d" type="checkbox" />d) Aerodactyl</div>
+                  <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
+                </form>
+                <?php
+              }
+            }else if($_SESSION["question"] == 5){ //Q5
+              if(isset($_POST["q5"])){
+                echo "Check Question 5<br/>";
+                if($_POST["q5"] == "galaxy"){
+                  echo "Right answer";
+                  $_SESSION["score"] += 1;
+                }else{
+                  echo "Wrong answer";
+                }
+                $_SESSION["question"] +=1;
+                ?>
+                <form name="quiz" method="post">
+                  <input type="submit" name="submit" value="Next Question" />
+                </form>
+                <?php
+              }else{
+                ?>
+                <form name="quiz" method="post">
+                  <h3> Difficult </h3>
+                  <div>5) I am a difficult question <input id="q5" name="q5" type="text" />.</div>
+                  <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
+                </form>
+                <?php
+              }
+            }else if($_SESSION["question"] == 6){ //Q6
+              if(isset($_POST["q6"])){
+                echo "Check Question 6<br/>";
+                if($_POST["q6"] == "age"){
+                  echo "Right answer";
+                  $_SESSION["score"] += 1;
+                }else{
+                  echo "Wrong answer";
+                }
+                $_SESSION["question"] +=1;
+                ?>
+                <form name="quiz" method="post">
+                  <input type="submit" name="submit" value="Next Question" />
+                </quiz>
+                <?php
+              }else{
+                ?>
+                <form name="quiz" method="post">
+                  <h3> Difficult </h3>
+                  <div><br />6) I am another difficult question  <input id="q6" name="q6" type="text" /> of the Pokemon universe.</div>
+                  <br /><input name="submit" type="submit" value="Grade this question" /><input name="reset" type="reset" value="Clear" />
+                </form>
+                <?php
+              }
+            }else if($_SESSION["question"] == 7){
+              echo "Reached the last question. Quiz ended.<br />Feel Free to try the PokePuzzle!";
+            }
           }
         ?>
-        <h1>Who's That Pokemon?</h1>
-        <form name = "pokemonQuiz">
-          <b><h3>Easy</h3></b>
-          <b>1) </b><span>Who's the main mascot of the Pokemon Franchise?</span><br />
-          <img src="./img/pikachu.png" alt="easy pokemon" style="width: 250px;height: 250px;">
-          <br/>
-          <input type="radio" name = "mcOne" id ="mcOneA" value = "mcOneA" /> Electabuzz <br />
-          <input type="radio" name = "mcOne" id ="mcOneB" value = "mcOneB" /> Pikachu <br />
-          <br />
-          <h3>Medium</h3>
-          <b>2) </b><span>Charmander's last evolution is ___?</span><br />
-          <img src="./img/charizard.png" alt="medium pokemon" style="width: 250px;height: 250px;">
-          <br/>
-          <input type="radio" name = "mcTwo" id ="mcTwoA" value = "mcTwoA" /> Chardrago <br />
-          <input type="radio" name = "mcTwo" id ="mcTwoB" value = "mcTwoB" /> Charizard <br />
-          <input type="radio" name = "mcTwo" id ="mcTwoC" value = "mcTwoC" /> Charmeleon <br />
-          <br />
-          <h3> Difficult </h3>
-          <b>3) </b><span>The only fossil Pokemon in Generation 1 that does not have an evolution is ___?</span><br />
-          <img src="./img/aerodactyl.png" alt="medium pokemon" style="width: 250px;height: 250px;">
-          <br/>
-          <input type="radio" name = "mcThree" id ="mcThreeA" value = "mcThreeA" /> Aerodactyl <br />
-          <input type="radio" name = "mcThree" id ="mcThreeB" value = "mcThreeB" /> Omastar <br />
-          <input type="radio" name = "mcThree" id ="mcThreeC" value = "mcThreeC" /> Kabutops <br />
-          <br />
-          <input type = "button" value = "Grade It!" onclick="grade()" />
-          <input type = "reset" value = "Clear" />
-        </form>
       </div>
 
       <div class="footer">
