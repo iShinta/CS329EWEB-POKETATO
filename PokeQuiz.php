@@ -17,7 +17,7 @@
       <div class="main_content">
         <?php
           if(!isset($_COOKIE["id"])){
-            <p>You need to login to take the Quiz</p>
+            ?><p>You need to login to take the Quiz</p><?php
           }else{
             if(!isset($_SESSION["name"])) {
               $_SESSION["name"] = $_COOKIE["id"];
