@@ -30,6 +30,8 @@
           showLogged();
         }else{
           echo strcmp($userlist[$username], $password);
+          echo "w".$userlist[$username]."w";
+          echo "w".$password."w";
           echo "Login Failed.<br />Bad username or password";
           echo "<br />You entered username: ".$username;
           echo "<br />and Password: ".$password;
