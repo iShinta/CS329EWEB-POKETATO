@@ -5,5 +5,5 @@
   <li><a href="anime.php">Anime</a></li>
   <li><a href="puzzle.php">Puzzle</a></li>
   <li><a href="./PokeQuiz.php">Quiz</a></li>
-  <?php include('player.php'); ?>
-<ul>
+</ul>
+<?php include('player.php'); ?>
