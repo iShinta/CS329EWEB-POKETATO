@@ -49,9 +49,9 @@ function start(){
 
 function showRegister(){ ?>
   <p>Registration Page</p>
-  <form method="post" action="#">
+  <form name="form_reg" method="post" onsubmit="return validateForm()">
     Username: <input type="text" name="username" /><br />
-    Password: <input type="text" name="password" /><br />
+    Password: <input type="password" name="password" /><br />
     <input type="submit" name="submit" value="Submit" />
     <input type="reset" name="reset" value="Reset" />
   </form>
@@ -65,6 +65,20 @@ function showRegister(){ ?>
   <meta charset="utf-8" />
 	<title>Poketato - The Ultimate Pokemon Repository</title>
 	<link rel="stylesheet" style="text/css" href="style.css" />
+  <script>
+  function validateForm() {
+      var x = document.forms["form_reg"]["username"].value;
+      var y = document.forms["form_reg"]["password"].value;
+      if (x == "") {
+          alert("Username must be filled out");
+          return false;
+      }
+      if (y == "") {
+          alert("Password must be filled out");
+          return false;
+      }
+  }
+  </script>
 </head>
 
 <body>
