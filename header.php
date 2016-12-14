@@ -21,7 +21,7 @@
 
         //echo 'Password pour ce username: ';
         //print($userlist[$username]."<br />");
-        if(array_key_exists($username, $userlist) && strcmp($userlist[$username], $password)){
+        if(array_key_exists($username, $userlist) && strcmp($userlist[$username], $password) == 0){
           echo $userlist[$username];
           echo $password;
           //echo "Login Succeeded. Welcome ".$username. ".<br />";
