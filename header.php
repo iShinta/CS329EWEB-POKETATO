@@ -22,13 +22,14 @@
         //echo 'Password pour ce username: ';
         //print($userlist[$username]."<br />");
         if(array_key_exists($username, $userlist) && strcmp($userlist[$username], $password) == 0){
-          echo $userlist[$username];
-          echo $password;
+          // echo $userlist[$username];
+          // echo $password;
           //echo "Login Succeeded. Welcome ".$username. ".<br />";
           setcookie("id", $username, time()+3600);
           setcookie("timeloggedin", time(), time()+3600);
           showLogged();
         }else{
+          echo strcmp($userlist[$username], $password);
           echo "Login Failed.<br />Bad username or password";
           echo "<br />You entered username: ".$username;
           echo "<br />and Password: ".$password;
