@@ -22,6 +22,8 @@
         //echo 'Password pour ce username: ';
         //print($userlist[$username]."<br />");
         if(array_key_exists($username, $userlist) && strcmp($userlist[$username], $password)){
+          echo $userlist[$username];
+          echo $password;
           //echo "Login Succeeded. Welcome ".$username. ".<br />";
           setcookie("id", $username, time()+3600);
           setcookie("timeloggedin", time(), time()+3600);
