@@ -84,7 +84,7 @@ function showRegister(){ ?>
 <body>
 	<div class="container">
 		<div class="header">
-			<div class="title"><a href="index.html"><img title="Poketato" src="img/title.png" alt="Poketato" /></a></div>
+			<div class="title"><a href="index.php"><img title="Poketato" src="img/title.png" alt="Poketato" /></a></div>
 			<div class="undertitle"> The Ultimate Pokemon Repository </div>
 		</div>
 		<div class="menu">
