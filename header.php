@@ -56,7 +56,7 @@
     <h3>Please Log In</h3>
     <form method="post" action="#">
       <input type="text" name="username" />
-      <input type="text" name="password" /><br />
+      <input type="password" name="password" /><br />
       <input type="submit" name="submit" value="Submit" />
       <input type="reset" name="reset" value="Reset" />
     </form>
